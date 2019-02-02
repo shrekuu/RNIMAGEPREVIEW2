@@ -1,0 +1,16 @@
+PODS:
+  - JTSImageViewController (1.5.1)
+
+DEPENDENCIES:
+  - JTSImageViewController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JTSImageViewController
+
+SPEC CHECKSUMS:
+  JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
+
+PODFILE CHECKSUM: 179eb22ca374218169c1972ce4973cca08528322
+
+COCOAPODS: 1.5.3

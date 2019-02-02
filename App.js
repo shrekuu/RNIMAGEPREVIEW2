@@ -8,7 +8,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, NativeModules } from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,6 +19,15 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  componentDidMount() {
+    // too slow
+    // const imageURL = 'https://images.unsplash.com/photo-1433832597046-4f10e10ac764?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bdc08ca394410d95482816cdb957f078'
+    // low res image
+    const imageURL = 'http://play.linwise.com/photo-1433832597046-4f10e10ac764.jpg'
+    NativeModules.JTSImagePreview.showImage(imageURL)
+  }
+
   render() {
     return (
       <View style={styles.container}>
