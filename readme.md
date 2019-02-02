@@ -10,5 +10,5 @@
 
 * clone this repo `git clone git@github.com:shrekuu/RNIMAGEPREVIEW2.git`
 * cd into the `ios` directory and run `pod install`
-* install dependencies `yarn install`
-* run `react-native run-ios`
+* cd into project root direcotry and run `yarn install`
+* then run `react-native run-ios`
